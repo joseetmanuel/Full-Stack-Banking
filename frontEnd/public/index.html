@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="author" content="José Etmanuel" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Bad Bank</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Bad Bank</h3>
+          <nav class="nav nav-masthead justify-content-center" id="nav_header">
+            <a class="nav-link active" id="home"  href="./home"  data-toggle="tooltip" data-placement="bottom" title="Este es el home" >Home</a>
+            <a class="nav-link" id="createAccount" href="./createAccount"  data-toggle="tooltip" data-placement="bottom" title="Aqui creas tu cuenta">Create Account</a>
+            <a class="nav-link" id="deposit" href="./deposit"  data-toggle="tooltip" data-placement="bottom" title="Aquí haces un deposito">Deposit</a>
+            <a class="nav-link" id="withdraw" href="./withdraw"  data-toggle="tooltip" data-placement="bottom" title="Aquí retiras">Withdraw</a>
+            <a class="nav-link" id="allData" href="./allData"  data-toggle="tooltip" data-placement="bottom" title="Todos los datos">All Data</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>
+            Recopilación de 
+            <a href="https://xpro.mit.edu/">Proyecto para el MIT</a>, by
+            <a href="https://twitter.com/joseetmanuel">@joseetmanuel</a>.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script>
+       var link = window.location.hash;
+       console.log()
+    </script>
+     
+  </body>
+</html>
